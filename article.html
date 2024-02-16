@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom de la Boutique</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('xiao.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav div {
+            display: flex;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container div {
+            position: relative;
+            width: 23%;
+            margin-bottom: 20px;
+            background-color: rgba(200, 200, 200, 0.7); 
+            padding: 10px; 
+            border-radius: 10px; 
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; 
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            display: none;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            border-radius: 8px; 
+            animation: fadeIn 1s ease;
+        }
+
+        .container div:hover .overlay {
+            display: flex;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenue Chez MEDOX Store</h1>
+    </header>
+
+    <nav>
+        <div>
+            <button onclick="window.location.href='main.html'">Accueil</button>
+            <button onclick="window.location.href='#'">Nouveaux Articles</button>
+            <button onclick="window.location.href='#'">Tendance</button>
+        </div>
+        <div>
+            <button onclick="window.location.href='#'">Paramètres</button>
+            <button onclick="window.location.href='#'">Service Technique</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div>
+            <img src="cooler1.jpg" alt="Image 1">
+            <div class="overlay">
+                <p>319 DH</p>
+            </div>
+        </div>
+        <div>
+            <img src="cooler2.png" alt="Image 2">
+            <div class="overlay">
+                <p>150 DH</p>
+            </div>
+        </div>
+        <div>
+            <img src="cooler3.jpg" alt="Image 3">
+            <div class="overlay">
+                <p>200 DH</p>
+            </div>
+        </div>
+        <div>
+            <img src="cooler4.jpg" alt="Image 4">
+            <div class="overlay">
+                <p>480 DH</p>
+            </div>
+        </div>
+        <div>
+            <img src="psu1.jpg" alt="Image 1">
+            <div class="overlay">
+                <p>780 DH</p>
+            </div>
+        </div>
+        <div>
+            <img src="psu2.jpg" alt="Image 2">
+            <div class="overlay">
+                <p>425 DH</p>
+            </div>
+        </div>
+        <div>
+            <img src="psu3.png" alt="Image 3">
+            <div class="overlay">
+                <p>630 DH</p>
+            </div>
+        </div>
+        <div>
+            <img src="psu4.jpg" alt="Image 4">
+            <div class="overlay">
+                <p>320 DH</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

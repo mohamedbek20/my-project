@@ -1,0 +1,126 @@
+<!-- header.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDOX Store</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(210, 150, 150)
+}
+h1{
+    padding: 8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(kazuha.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    display: block;
+    padding: 10px;
+}
+section {
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    nav a {
+        margin: 5px;
+    }
+}
+.div2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.divcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligner les images à gauche */
+    height: 100vh; /* 100% de la hauteur de la fenêtre */
+    justify-content: center; /* Centrer verticalement */
+    padding-left: 20px; /* Espacement à gauche */
+}
+
+.divcontainer img {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    margin: 8px;
+}
+
+.divcontainer div{
+    max-width: 100%; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a:hover {
+    color: blueviolet;
+}
+header{
+    color: gray;
+    text-align: center;
+    background-color: rgb(18, 221, 187);
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Votre Boutique</h1>
+    </header>
+    
+    <nav>
+        <div class="div1"><h1><a href="main.html">Accueil</a></h1></div>
+        <div class="div2">
+            <h1><a href="article.html">Nouveau Article</a></h1>
+            <h1><a href="tendance.html">Tendance</a></h1>
+            <h1><a href="parametres.html">Paramètres</a></h1>
+        </div>
+    </nav>
+    <div class="divcontainer">
+        <div class="cooler">
+            <img src="cooler1.jpg">
+            <img src="cooler2.png">
+            <img src="cooler3.jpg">
+            <img src="cooler4.jpg">
+        </div>
+        <div class="psu">
+            <img src="psu1.jpg">
+            <img src="psu2.jpg">
+            <img src="psu3.png">
+            <img src="psu4.jpg">
+        </div>
+    </div>
+</body>
+</html>
